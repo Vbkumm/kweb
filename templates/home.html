@@ -1,0 +1,552 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block stylesheet %}
+{% endblock %}
+
+{% block breadcrumb %}
+{% endblock %}
+
+{% block content %}
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="{% static 'img/intro-carousel01.jpg' %}" alt="carousel01"></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Você no comando das informações</h2>
+                <p>Soluções WEB altamente intuitivas, compatíveis a qualquer dispositivo e 100% nas nuvens. Tenha acesso
+                  em qualquer lugar a qualquer hora.</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Conheça mais</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="{% static 'img/intro-carousel02.jpg' %}" alt="carousel02"></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Processo totalmente automatizado</h2>
+                <p>Economize com funcionarios, tenha sua ferramenta trabalhando 24 horas 7 dias por semana para você.</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Conheça mais</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="{% static 'img/intro-carousel03.jpg' %}" alt="carousel03"></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Sempre em busca das melhores soluções</h2>
+                <p>Não importa o seu tamanho, é possivel encontrar a solução mais adquada a você com projetos exclusivos
+                  que atendem a sua necessidade.</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Conheça mais</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="{% static 'img/intro-carousel04.jpg' %}" alt="carousel04"></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Torne-se mais rentavel</h2>
+                <p>Com soluções que otimizam seus processos e melhoram suas rotinas, você terá a mais precissão na sua
+                  tomada de decisão.</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Conheça mais</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="{% static 'img/intro-carousel05.jpg' %}" alt="carousel05"></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Junte-se ao novo</h2>
+                <p>A informação na palma da sua mão, tudo que você precisa para não perder aquela oportunidade, venha e
+                  conheça o futuro.</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Conheça mais</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+
+  <main id="main">
+
+    <!--==========================
+      Featured Services Section
+    ============================-->
+    <section id="featured-services">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 box">
+            <i class="ion-ios-cloud-outline"></i>
+            <h4 class="title"><a href="">Sistemas nas nuvens</a></h4>
+            <p class="description">Com sistemas 100% nas nuvens você consegue acessar suas informações a qualquer hora e
+             de qualquer lugar para não perder aquela oportunidade.</p>
+          </div>
+
+          <div class="col-lg-4 box box-bg">
+            <i class="ion-ios-stopwatch-outline"></i>
+            <h4 class="title"><a href=""><strong>7/24 </strong>trabalhando sem parar</a></h4>
+            <p class="description">Sua ferramenta estará trabalhando para você 24 horas por dia 7 dias da semana, não
+            perca mais oportunidades por não estar disponível.</p>
+          </div>
+
+          <div class="col-lg-4 box">
+            <i class="ion-ios-heart-outline"></i>
+            <h4 class="title"><a href="">Feito para você</a></h4>
+            <p class="description">Cada necessidade tem sua solução, nossos sistemas são criados de acordo com o que
+              você precisa nos minimos detalhes.</p>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- #featured-services -->
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Sobre nós</h3>
+          <p>
+            Desenvolvemos soluções Web 100% nas nuvens, de facil interação com o usuario e personalisadas de acordo com
+            a necessidade de cada cliente respeitando cada detalhe do projeto, automatizando rotinas e revendo cada
+            processo envolvido para assim conseguir entregar um sistema completo que atenda totalmente há sua
+            necessidade e com toda a segurança que sua informação necessita.
+          </p>
+        </header>
+
+        <div class="row about-cols">
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="{% static 'img/mission.jpg' %}" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Missão</a></h2>
+              <p>
+                Entregar soluções tecnologicas de facil interação, 100% seguras e online. Ter a sustentabilidade como
+                pilar fundamental para prosperidade.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-col">
+              <div class="img">
+                <img src="{% static 'img/plan.jpg' %}" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-list-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Estratégia</a></h2>
+              <p>
+                Estar sempre em busca de novas tecnologias e ferramentas que possam aprimorar nossas soluções e fornecer
+                a melhor experiencia de interação entre o sistema e seu usuario.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="about-col">
+              <div class="img">
+                <img src="{% static 'img/vision.jpg' %}" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Visão</a></h2>
+              <p>
+                Ser referencia em fornecer a melhor solução tecnologia a qual consiga atender plenamente as expectativas do cliente
+                e ainda reduza seus processos e rotinas.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Serviços</h3>
+          <p>Oferecemos serviços com foco na sua necessidade, seja automatizando rotinas da sua empresa via ferramentas
+            web-cloud ou no desenvolvimento de um web sites. Em busca de algo novo que possa atrair mais clientes
+            para seu negócio, ou ainda uma ferramenta que possa  otimizar o serviço de agendamento de seus serviços,
+            procure-nós que teremos a solução.</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+            <h4 class="title"><a href="">Aplicações na nuvem</a></h4>
+            <p class="description">Desenvolvimento de sistemas 100% na nuvem, com a utilização de ferramentas avançadas
+              é possivel agregar valor a seu negócio. Nosso objtivo é simplificar a tecnologia com a garantia de um
+              desenvolvimento escalonavel e expancivel.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
+            <h4 class="title"><a href="">Sistema de agendamento</a></h4>
+            <p class="description">Com nosso sistema de agendamento online, é possivel eliminar custos e otimizar o fluxo
+              de clintes em seu estabelecimento. Ele é adquado aos mais diversos tipos de profissionais sendo totalmente
+              personalizavel a seu negocio.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+            <h4 class="title"><a href="">Web sites</a></h4>
+            <p class="description">Totalmente personalizados a sua necessidade, utilizamos os melhores frameworks. Assim
+            é possivel a rapida entrega de um site totalmente adequado a sua expectativa. Aqui voce possui um periodo
+            experimental para teste e a adequação da sua solução.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+            <h4 class="title"><a href="">PCMs</a></h4>
+            <p class="description">Com a organização e planejamento do processo de produção é possivel criar sistemas
+               que controlem a rotina, programação, inspeção, estoque de materiais e operação. Trazendo essas informações
+              para frente de sua tela.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
+            <h4 class="title"><a href="">EIP</a></h4>
+            <p class="description">Um dos fatores que mais agrega valor a seu negocio, e a maneira como a informação é
+              tratada, com nossas ferramentas é possivel criar sistemas que coloquem você em controle total dos numeros de
+              seu negócio.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-people-outline"></i></div>
+            <h4 class="title"><a href="">CRM</a></h4>
+            <p class="description">O gerenciamento da relação entre seu cliente com seu negocio é um fator muito
+              importante para o seu sucesso. Com nossas ferramentas é possivel desenvolver as melhores soluções de
+              gerenciamento dessa relação.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+    <section id="skills">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Habilidades e tecnologias</h3>
+          <p> Em busca constante pela perfeição, sempre atento a novas tecnologias. Para que possa melhorar o desempenho
+            de nossos serviços e soluções, aqui estão algumas de nossas habilidades tecnologicas:</p>
+        </header>
+
+        <div class="skills-content">
+
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">HTML <i class="val">100%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">CSS <i class="val">100%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">Bootstrap <i class="val">100%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">Python <i class="val">90%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">Django <i class="val">85%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar text-dark bg-color-dark bg-light" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">MySql <i class="val">70%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">POSTGRESQL <i class="val">60%</i></span>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!--==========================
+      Methodology Section
+    ============================-->
+    <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">Metodologia</h3>
+        </header>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 box">
+
+            <h4 class="title"><a href="">Arquitetura</a></h4>
+            <p class="description">Nossas soluções são projetadas em modulos, com uma abordagem funcional para garantir
+                a sua interação. Assim é possivel entregar um sistema sob demanda que atenda a sua necessidade.
+                Nossa premissa é fazer o maximo com pouco, foco em entregar a solução sem reinventar a roda.</p>
+          </div>
+
+          <div class="col-lg-4 box box-bg">
+
+            <h4 class="title"><a href="">Segurança</a></h4>
+            <p class="description">Um aspecto muito importante são os padrões de segurança de dados e de conformidade de
+                dados. Aqui cuidamos miliciosamente para garantir que sua privacidade seja respeitada, com o uso de
+                tecnológias avançadas e sempre seguindo as regras e normas de cada país.</p>
+          </div>
+
+          <div class="col-lg-4 box">
+
+            <h4 class="title"><a href="">Testando</a></h4>
+            <p class="description">Aqui sua solução é testada constantemente. Trabalhamos com o desenvolvimento orientado
+                a testes e falhas, partindo da criação de cenários para interromper o sistema durante seu desenvolvimento.
+                Detectando precocemente bugs que podem ser potencialmente perigosos posteriormente.</p>
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+    </section><!-- #portfolio -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <section id="clients" class="wow fadeInUp">
+      <div class="container">
+
+         {% if user.is_authenticated %}
+          <div class="col-3 m-1">
+            <a href="{% url 'main:client_list_view' %}" class="btn btn-primary">Gerenciar<br>clientes</a>
+          </div>
+
+          {% endif %}
+
+        {% if clients %}
+        <header class="section-header">
+          <h3>Clientes</h3>
+        </header>
+        {% endif %}
+
+        <div class="owl-carousel clients-carousel">
+          {% for client in clients %}
+          {% if client %}
+
+            {% if client.company_picture %}
+            <img src="{{MEDIA_URL}}{{ client.company_picture }}" alt="{{ client.company_picture }}">
+
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+
+        </div>
+
+      </div>
+    </section><!-- #clients -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+
+    <section id="testimonials" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        {% if user.is_authenticated %}
+          <div class="col-3 m-1">
+            <a href="{% url 'main:testimonial_list_view' %}" class="btn btn-primary">Gerenciar<br>depoimentos</a>
+          </div>
+
+          {% endif %}
+
+        {% if testimonials %}
+        <header class="section-header">
+          <h3>Depoimentos</h3>
+        </header>
+
+         {% endif %}
+
+
+
+
+
+        <div class="owl-carousel testimonials-carousel">
+        {% for testimonial in testimonials %}
+        {% if testimonial %}
+          <div class="testimonial-item">
+            {% if testimonial.author_picture %}
+            <img src="{{MEDIA_URL}}{{ testimonial.author_picture }}" class="testimonial-img" alt="{{ testimonial.author_picture }}">
+            {% endif %}
+
+            <h3>{{ testimonial.testimonials_author }}</h3>
+            <h4>{{ testimonial.author_job }}</h4>
+            <p>
+              <img src="{% static 'img/quote-sign-left.png' %}" class="quote-sign-left" alt="">
+              {{ testimonial.testimonials_description }}
+              <img src="{% static 'img/quote-sign-right.png' %}" class="quote-sign-right" alt="">
+            </p>
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+
+      </div>
+    </section><!-- #testimonials -->
+
+
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h3>Entre em contato</h3>
+          <p>A nossa satisfação é ver você satisfeito com a sua solução, consulte-nos.</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Endereço</h3>
+              <address>Rua Alves de Brito, 346 - Florianópolis SC - Brasil - 88015-440</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Telefone</h3>
+              <p><a href="tel:+5548999815022">+55 48 99981-5022</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:vncsbk@hotmail.com">vncsbk@hotmail.com</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form">
+          <div id="sendmessage">Sua menssagem foi enviada com sucesso. Obrigado!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome" data-rule="minlen:4" data-msg="Deve conter no minimo 4 caracteres" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email" data-rule="email" data-msg="Forneça um email valido" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" data-rule="minlen:4" data-msg="Seu assunto deve conter ao menos 8 caracteres" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Escreva algo para nós" placeholder="Menssagem"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Enviar menssagem</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+
+
+
+{% endblock %}
+{% block javascript %}
+    <script src="{% static 'lib/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'lib/jquery/jquery-migrate.min.js' %}"></script>
+    <script src="{% static 'lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/superfish/hoverIntent.js' %}"></script>
+    <script src="{% static 'lib/superfish/superfish.min.js' %}"></script>
+    <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+    <script src="{% static 'lib/touchSwipe/jquery.touchSwipe.min.js' %}"></script>
+
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+{% endblock %}

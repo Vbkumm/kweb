@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block head %}
+
+{% endblock %}
+
+
+{% block stylesheet %}{% endblock %}
+{% block breadcrumb %}{% endblock %}
+
+{% block content %}
+
+    <section id="testimonials" class="section-bg wow fadeInUp">
+      <div class="container">
+
+
+
+        <header class="section-header">
+          <div class="row mt-3">
+            <div class="col-md-6 offset-md-3">
+              <h3>Depoimentos</h3>
+            </div>
+            <div class="col-md-3">
+              <a href="{% url 'main:testimonial_add' %}" class="btn btn-primary">Adicionar novo</a>
+            </div>
+            </div>
+        </header>
+
+
+
+
+
+              {% for testimonial in testimonials %}
+              <div class="card mt-1">
+
+                <div class="testimonial-item">
+                  {% if testimonial.author_picture %}
+                  <img src="{{MEDIA_URL}}{{ testimonial.author_picture }}" class="testimonial-img" alt="{{ testimonial.author_picture }}">
+                  {% endif %}
+
+                  <h3>{{ testimonial.testimonials_author }}</h3>
+                  <h4>{{ testimonial.author_job }}</h4>
+                  <p>
+                    <img src="{% static 'img/quote-sign-left.png' %}" class="quote-sign-left" alt="">
+                    {{ testimonial.testimonials_description }}
+                    <img src="{% static 'img/quote-sign-right.png' %}" class="quote-sign-right" alt="">
+                  </p>
+                  <div class="col-md-4 ml-md-auto m-2">
+                    <a href="{% url 'main:testimonial_update' testimonial.pk %}" class="btn btn-primary">
+                         Alterar
+                    </a>
+
+                    <a href="{% url 'main:testimonial_delete' testimonial.pk %}" class="btn btn-primary">
+                         Deletar
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+
+          {% endfor %}
+
+
+
+    </section><!-- #testimonials -->
+
+
+
+
+{% endblock %}
+{% block javascript %}
+
+</script>
+
+
+{% endblock %}

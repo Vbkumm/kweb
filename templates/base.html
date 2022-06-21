@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name=description content="vbkumm web solutions!">
+    <meta content=origin name=referrer>
+    <meta property=og:type content=website>
+    <meta name=title content="vbkumm web solutions">
+    <meta property=og:image content="https://www.vbkumm.com/static/img/kuzoco.gif">
+    <meta name=author content="Vinicius B Kumm">
+    <meta name="robots" content="noodp">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="vbkumm web solution!">
+    <meta property="og:description" content="vbkumm web solution!">
+    <meta property="og:url" content="https://vbkumm.com">
+    <meta property="og:site_name" content="vbkumm web solution!">
+    <link rel="canonical" href="https://vbkumm.com"/>
+    <title>{% block title %}vbkumm{% endblock %}</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+
+    <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    {% block head %}
+    {% endblock %}
+  </head>
+  <style>
+{% block stylesheet %}
+{% endblock %}
+
+
+  </style>
+  <body>
+    {% include 'includes/navbar.html' %}
+
+    {% block body %}
+
+    {% include 'includes/messages.html' %}
+    {% block breadcrumb %}{% endblock %}
+
+    {% block content %}
+
+    {% endblock %}
+
+    {% include "includes/footer.html"%}
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Uncomment below i you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
+    {% endblock body %}
+
+    {% block javascript %}
+    <script src="{% static 'lib/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'lib/jquery/jquery-migrate.min.js' %}"></script>
+    <script src="{% static 'lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/superfish/hoverIntent.js' %}"></script>
+    <script src="{% static 'lib/superfish/superfish.min.js' %}"></script>
+    <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+    <script src="{% static 'lib/touchSwipe/jquery.touchSwipe.min.js' %}"></script>
+
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    {% endblock %}
+  </body>
+</html>
